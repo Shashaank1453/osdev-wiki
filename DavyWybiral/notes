@@ -1,0 +1,15 @@
+eax --> type of system call
+ebx --> status code of execution
+ecx --> the actual string bytes
+edx --> how many bytes to print out
+int 0x80 --> system call interrupt
+
+eax 4
+ebx 1
+4 system_write
+1 status code 1
+
+eax 1
+ebx 0
+4 sys exit
+0 status code
